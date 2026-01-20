@@ -1,14 +1,12 @@
-import java.util.*;
+import java.util.Scanner;
 public class PowerCalculation{
-public static void main(String args[]){
-Scanner sc = new Scanner(System.in);
-int a,b;
-a=sc.nextInt();
-b=sc.nextInt();
-m1(a,b);
-}
-public static void m1(int a,int b){
-double power = Math.pow(a,b);
-System.out.println("Power Calculation = "+power);
-}
-}
+    public static void main(String[] args){
+	Scanner scanner = new Scanner(System.in);
+	System.out.println("Enter base : ");
+	int base = scanner.nextInt();
+	System.out.println("Enter power : ");
+	int power = scanner.nextInt();
+	double Result = Math.pow(base,power);
+	System.out.println("Power Calculation is : "+ Result);
+	}
+}	
